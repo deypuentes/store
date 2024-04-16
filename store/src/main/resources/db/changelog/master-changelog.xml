@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+   
+    <include file="/db/changelog/001-create-product.xml" />
+        <include file="/db/changelog/002-create-seller.xml" />
+    <include file="/db/changelog/003-create-sales.xml" />
+    <include file="/db/sql/insert_product.sql" />
+    <include file="/db/sql/insert_sales.sql" />
+    <include file="/db/sql/insert_seller.sql" />
+</databaseChangeLog>
