@@ -28,18 +28,7 @@ public class ReportService {
 		logger.debug("Starting operation sales report by seller");
 		try {
 		return salesBySellerJDBC.getTotalSalesBySeller(startDate, endDate);
-		
-
-		/*List<Task> list = new ArrayList<>();
-		dao.findAllByIdPerson(idPersona).forEach(list::add);
-		List<TaskDTO> listaDTO =conversor.listaEntidadADto(list);
-		for (TaskDTO taskDTO : listaDTO) {
-			UserIdentityDTO identity = cliente.obtenerPorId(taskDTO.getIdPerson());
-			taskDTO.setUserName(identity.getUsername());
-		}
-
-		return listaDTO;*/
-		
+			
 		}
 		catch (Exception e) {
 			throw new Exception("detalle: " + e.getMessage());
